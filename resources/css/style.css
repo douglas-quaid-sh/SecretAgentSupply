@@ -53,14 +53,34 @@ html {
   background-color: black;
   color: #fff;
   display: inline-block;
-  padding: 2rem 0;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 20rem;
+
+}
+
+.update-box h4 {
+line-height: 1.25rem;
+}
+
+.update-box h1 {
+  font-size: 2rem;
 }
 
 /* Nav */
 
-nav {
+.nav-wrap {
   background-color: firebrick;
   padding: 0.75rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+nav {
+  display: block;
 }
 
 nav ul  {
@@ -71,7 +91,49 @@ nav ul  {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    text-align: center;
+    color: #fff;
+  }
+
+  nav ul.container {
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .update-box {
+    padding: 1rem 2rem;
+    width:100%;
+  }
+
+  .update-box h4 {
+  font-size: 0.77rem;
+  }
+
+  .update-box h1 {
     font-size: 1rem;
+  }
+}
+
+.show {
+  display: block;
 }
 
 /* Product Grid */
@@ -119,16 +181,24 @@ nav ul li a {
   }
 }
 
+@media only screen and ( max-width: 470px) {
+  .product-grid {
+    display: block;
+  }
+}
+
 /* Information */
 
 .information-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
 
 .information {
   width: 35%;
+  margin-bottom: 0.5rem;
+
 }
 
 .info-title {
@@ -141,6 +211,15 @@ nav ul li a {
     margin: .25rem 0;
 }
 
+@media only screen and ( max-width: 768px) {
+  .information-wrap {
+    display: block;
+  }
+  .information {
+    width: 100%;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -150,4 +229,10 @@ footer {
 
 footer .copyright {
   padding: 5rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .copyright {
+    text-align: center;
+  }
 }

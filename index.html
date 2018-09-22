@@ -5,6 +5,7 @@
     <title>Secret Agent Supply Inc.</title>
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <script src="./resources/js/script.js" ></script>
   </head>
   <body>
     <div class="main-wrapper">
@@ -37,7 +38,11 @@
       </div>
 
       <!-- Nav -->
-      <nav>
+      <div class="nav-wrap">
+        <div onclick="toggleMenu()" class="menu-toggle">
+          MENU
+        </div>
+        <nav id="main-nav" class="dropdown-content">
         <ul class="container">
           <li>
             <a href="">Eyewear</a>
@@ -59,6 +64,7 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
 
       <!-- Product Grid -->
